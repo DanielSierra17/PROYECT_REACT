@@ -15,8 +15,8 @@ function Navbar() {
                 <a href="ubicanos.html" class="item">Ubícanos</a>
                 <a href="opiniones.html" class="item">Opiniones</a>
                 <hr class="menu-hr" noshade="" />
-                <link to="login.html" class="item"><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar
-                    Sesión</button></link>
+                <Link to="/login" class="item"><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar
+                    Sesión</button></Link>
             </div>
         </nav>
     );
