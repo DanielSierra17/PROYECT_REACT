@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./Login.css"
+import logo from "./Hotelia horizontal negro.svg";
 
 function Login() {
     return (
@@ -9,7 +11,7 @@ function Login() {
                     style="stroke: none; fill: #FFFFFF; border-radius: 3px;"></path>
             </svg></div>
 
-            <img class="container-image" src="img/Hotelia horizontal negro.svg" />
+            <img class="container-image" src={logo} alt="Hotelia horizontal negro" />
             <div class="container-icons"><i class="fa-solid fa-user"></i></div>
 
             <span>Usuario</span>
@@ -18,9 +20,9 @@ function Login() {
             <span>Contraseña</span>
             <input type="password" class="container-input" />
 
-            <button type="submit"><a href="dashboard.html">Ingresar</a></button>
+            <button type="submit"><Link to="/dashboard">Ingresar</Link></button>
 
-            <p>¿No tienes una cuenta? <a class="color-message" href="registro.html">Regístrate aquí</a></p>
+            <p>¿No tienes una cuenta? <Link to="/registrar" class="color-message">Regístrate aquí</Link></p>
         </div>
     );
 }

@@ -6,7 +6,6 @@ import Inicio from './pages/index/Index';
 import Login from './pages/login/Login';
 import Dashboard from './pages/dashboard/Dashboard';
 import Registrar from './pages/registrar/Registrar';
-import Error from './pages/error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +15,6 @@ root.render(
       <Route path='/login' element={<Login />} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/registrar' element={<Registrar />} />
-      <Route path='/error' element={<Error />} />
     </Routes>
   </BrowserRouter>
 );
