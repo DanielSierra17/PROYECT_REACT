@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1024px) {
 
-    nav {
+nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -86,7 +86,6 @@
     }
 
     #features {
-        background: url();
         color: var(--blanco);
         padding-top: 3rem;
     }
@@ -205,7 +204,7 @@
     .cards-profile {
         width: 30%;
         padding: 2%;
-        background-image: url();
+        background-image: url(./Group\ 200.svg);
         background-size: cover;
         border-radius: 5px;
     }

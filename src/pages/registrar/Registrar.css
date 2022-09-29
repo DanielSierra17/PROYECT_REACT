@@ -17,9 +17,9 @@
     margin: 0;
 }
 
-body {
+.back-reg {
     display: flex;
-    background-image: url(lin-leyu-cIRFLobYPkY-unsplash.jpg);
+    background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,9 +34,9 @@ h5 {
 
 @media screen and (min-width: 1024px) {
 
-    body {
+    .back-reg {
         display: flex;
-        background-image: url(lin-leyu-cIRFLobYPkY-unsplash.jpg);
+        background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         flex-direction: row;

@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Inicio from './pages/index/Index';
 import Login from './pages/login/Login';
-import Dashboard from './pages/dashboard/Dashboard';
+// import Dashboard from './pages/dashboard/Dashboard';
 import Registrar from './pages/registrar/Registrar';
+import Errores from './pages/error_404/Error_404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,8 +14,9 @@ root.render(
     <Routes>
       <Route path='/' element={<Inicio />} />
       <Route path='/login' element={<Login />} />
-      <Route path='/dashboard' element={<Dashboard />} />
+      {/* <Route path='/dashboard' element={<Dashboard />} /> */}
       <Route path='/registrar' element={<Registrar />} />
+      <Route path='/errores' element={<Errores />} />
     </Routes>
   </BrowserRouter>
 );

@@ -26,7 +26,7 @@
 .cards-profile {
     width: 90%;
     padding: 3%;
-    background-image: url(../img/Group\ 200.svg);
+    background-image: url(./Group\ 200.svg);
     background-size: cover;
     border-radius: 5px;
 }
@@ -122,7 +122,7 @@
     .cards-profile {
         width: 30%;
         padding: 2%;
-        background-image: url(../img/Group\ 200.svg);
+        background-image: url(./Group\ 200.svg);
         background-size: cover;
         border-radius: 5px;
     }

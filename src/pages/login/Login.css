@@ -15,16 +15,8 @@
 
 * {
     margin: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin: 0;
     padding: 0;
-    background-image: url(pesce-huang-PonEYQKo0XU-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -33,6 +25,36 @@ h3,
 h4,
 h5 {
     font-family: 'Marcellus', serif;
+}
+
+.background {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./pesce-huang-PonEYQKo0XU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 320px) {
+    
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        height: 30%;
+        width: 90%;
+    }
+
+    .container-image {
+        margin-top: -130px;
+        padding: 15px;
+        display: flex;
+        float: left;
+        margin-right: 40%;
+        width: 190px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -48,7 +70,7 @@ h5 {
 }
 
 @media screen and (min-width: 1024px) {
-
+    
     .container-form {
         display: flex;
         flex-direction: column;
@@ -60,7 +82,7 @@ h5 {
 }
 
 @media screen and (min-width: 1308px) {
-
+   
     .container-form {
         display: flex;
         flex-direction: column;
@@ -68,5 +90,5 @@ h5 {
         height: 50%;
         width: 35%;
     }
-
+    
 }

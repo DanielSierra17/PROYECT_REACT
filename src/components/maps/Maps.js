@@ -7,7 +7,7 @@ function Maps() {
             <div class="location-zone">
                 <p>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</p>
                 <hr class="split-line"></hr>
-                    <p>+57 601 4567899</p>
+                <p>+57 601 4567899</p>
             </div>
         </div>
     );

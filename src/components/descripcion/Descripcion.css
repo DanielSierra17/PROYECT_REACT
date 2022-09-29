@@ -1,20 +1,11 @@
-#descripcion{
+#information-section {
     display: flex;
-    padding: 5rem;
-    align-items: center;
-    justify-content:space-between;
 }
 
-.text-descripcion{
-    flex-basis: 70%;
-    
+.information-zone {
+    padding: 2em;
 }
 
-.img-descripcion{
-    flex-basis: 30%;
-    text-align: center;
-}
-
-.img-descripcion img{
-    width: 50%;
+.information-image img {
+    display: none;
 }

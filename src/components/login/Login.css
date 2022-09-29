@@ -26,30 +26,10 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    /* background-image: url(../img/pesce-huang-PonEYQKo0XU-unsplash.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Marcellus', serif;
-}
-
 .container-form {
     color: var(--blanco);
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 50%;
     align-items: center;
     margin: auto;
     margin-top: 130px;
@@ -124,23 +104,4 @@ button {
 a {
     color: var(--blanco);
     text-decoration: none;
-}
-
-@media screen and (min-width: 320px) {
-    .container-form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5%;
-        height: 30%;
-        width: 90%;
-    }
-
-    .container-image {
-        margin-top: -130px;
-        padding: 15px;
-        display: flex;
-        float: left;
-        margin-right: 40%;
-        width: 190px;
-    }
 }
