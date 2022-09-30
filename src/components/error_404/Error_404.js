@@ -4,8 +4,8 @@ function Errores() {
     return (
         <body className="back-error">
 
-            <div class="container">
-                <div class="subcontainer">
+            <div class="contenedor-error">
+                <div class="subcontenedor-error">
                     <h1>ERROR 404</h1>
                     <h3>EXTRAVIADO</h3>
                     <h5>el recurso solicitado no se pudo encontrar en este servidor</h5>

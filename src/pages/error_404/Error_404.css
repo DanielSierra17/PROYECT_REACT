@@ -1,12 +1,12 @@
 @media only screen and (min-width: 1024px) {
 
-    .container {
+    .contenedor-error {
         display: flex;
         margin: 15%;
         justify-content: center;
     }
 
-    .subcontainer {
+    .subcontenedor-error {
         text-align: center;
         width: 70%;
         height: 50%;

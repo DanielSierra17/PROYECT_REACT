@@ -4,9 +4,7 @@ import "./Error_404.css";
 
 function ER404() {
     return (
-        <div className="contenedor">
             <E404 />
-        </div>
     );
 }
 

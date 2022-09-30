@@ -1,0 +1,229 @@
+/* .contenedor-dash {
+    background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 30%;
+    color: var(--blanco);
+}
+
+nav .logo {
+    background-color: #0B3860;
+    background-image: url(./Group\ 200.svg);
+    background-size: 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.container-username {
+    display: none;
+}
+
+.container-lateral-bar {
+    background-color: var(--azulnegro);
+    height: 95.9%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .container-lateral-bar .icons div {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+nav .container-lateral-bar .icons div:hover {
+    background-color: var(--azuloscuro);
+}
+
+nav .container-lateral-bar .icons .icon-active {
+    background-color: var(--azuloscuro);
+}
+
+nav .container-lateral-bar .icons div a {
+    display: none;
+}
+
+nav .container-exit {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--azulnegro);
+}
+
+nav .container-exit a {
+    display: none;
+}
+
+nav .container-exit:hover {
+    background-color: var(--azuloscuro);
+}
+
+.container-dashboard {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin: 3rem;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+}
+
+.container-information {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-photo {
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-image img {
+    width: 100%;
+    height: 90%;
+}
+
+.container-photo a {
+    text-decoration: none;
+    color: var(--blanco);
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--negro);
+    font-size: 1em;
+}
+
+.icons-two {
+    display: flex;
+    color: var(--blanco);
+    padding: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.2em;
+    background-color: var(--azuloscuro);
+    font-size: 2em;
+}
+
+.icons-three {
+    display: none;
+    background-color: var(--negro);
+}
+
+.container-form {
+    width: 80%;
+    margin: 1rem;
+}
+
+.container-form .container-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-form .subcontainer-columns {
+    display: flex;
+    padding: 1.5em;
+    width: 90%;
+    flex-direction: column;
+}
+
+.container-form .subcontainer-columns input {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0;
+}
+
+#container-radio {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    margin: 1em 0;
+}
+
+#container-radio input {
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+    margin-right: 1em;
+}
+
+.container-buttons button {
+    width: 100%;
+    color: var(--blanco);
+    background-color: var(--negro);
+    padding: 2%;
+    font-size: 1.2em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 0.1em;
+    cursor: pointer;
+}
+
+.container-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.container-password input {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 0;
+}
+
+.subcontainer-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 9em;
+}
+
+.subcontainer-password input {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 0;
+} */

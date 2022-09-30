@@ -1,72 +1,78 @@
-import logo from './Hotelia horizontal blanco.svg';
-import "./Registrar.css";
+import { Link } from "react-router-dom";
+import logoform from "../../img/Hotelia horizontal blanco.svg";
 
-function Registrar() {
+function registrar() {
     return (
-        <body className="back-reg">
-            <nav class="container-information">
-                <img src={logo} class="container-image" alt="" />
-                <h1 class="container-tittle">Eres más que bienvenido</h1>
-            </nav>
+        <body class="dash">
 
-            <div class="container-register">
-                <div class="container-name">
-                    <h1>Regístrate</h1>
-                </div>
-                <div class="container-columns">
-                    <form method="" class="container-form">
-                        <div class="column">
-                            <div class="columns">
+                <nav class="slider-register">
+                    <img src={logoform} alt="" />
+                    <h1>Eres más que bienvenido</h1>
+                    <Link to="/" class="item"><button class="salir-register"><i class="fa-solid fa-arrow-right-from-bracket"></i>Salir</button></Link>
+                </nav>
+                <div class="form-register">
+                    <div class="registrate">
+                        <h1>Registrate</h1>
+                    </div>
+
+                    <form class="">
+                        <div class="formulario">
+                            <div class="columna">
                                 <div>
-                                    <label>Tipo de documento</label>
-                                    <input type="text" />
+                                    <label for="tipo">Tipo de documento</label>
+                                    <select name="select">
+                                        <option selected>Seleccione una opcion</option>
+                                        <option>Tarjeta de identidad</option>
+                                        <option>Cedula de ciudadania</option>
+                                    </select>
                                 </div>
                                 <div>
-                                    <label>Nombre</label>
-                                    <input type="text" />
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" />
                                 </div>
                                 <div>
-                                    <label>Fecha de nacimiento</label>
-                                    <input type="date" />
+                                    <label for="fecha">Fecha de nacimiento</label>
+                                    <input type="date" name="fecha" />
                                 </div>
 
                                 <div>
-                                    <label>Email</label>
-                                    <input type="email" />
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="e-mail" />
                                 </div>
                                 <div>
-                                    <label>País de origen</label>
-                                    <input type="text" />
+                                    <label for="pais">Pais de origen</label>
+                                    <input type="text" name="pais" id="pais" />
                                 </div>
                                 <div>
-                                    <label>contraseña</label>
+                                    <label>Contraseña</label>
                                     <input type="password" />
                                 </div>
                             </div>
-                            <div class="columns">
+                            <div class="columna">
                                 <div>
-                                    <label>Número de documento</label>
-                                    <input type="number" />
+                                    <label for="doc">Numero de documento</label>
+                                    <input type="number" name="doc" id="doc" />
                                 </div>
                                 <div>
-                                    <label>Apellido</label>
-                                    <input type="text" />
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" name="apellido" id="apellido" />
                                 </div>
                                 <div>
-                                    <label for="gender">Género</label>
-                                    <div class="gender">
-                                        <input type="radio">Mujer</input>
-                                        <input type="radio">Hombre</input>
-                                        <input type="radio">Otro</input>
+                                    <label>Genero</label>
+                                    <div class="genero">
+                                        <input type="radio" /><label>Mujer</label>
+                                        <input type="radio" /><label>Hombre</label>
+                                        <input type="radio" /><label>Otro</label>
                                     </div>
                                 </div>
                                 <div>
-                                    <label>Telefono</label>
-                                    <input type="number" />
+                                    <label for="telefono">Telefono</label>
+                                    <input type="number" name="telefono" id="telefono" />
                                 </div>
-                                <div>
+                                <div class="foto">
                                     <label>Foto</label>
-                                    <input type="text" placeholder="Seleccionar Archivo" />
+                                    <input type="file" id="archivo" />
+                                    <label for="archivo" id="archivo">Selecionar Archivo</label>
                                 </div>
                                 <div>
                                     <label>Confirmar contraseña</label>
@@ -74,29 +80,32 @@ function Registrar() {
                                 </div>
                             </div>
                         </div>
+
                         <input type="checkbox" id="btn-modal" />
-                        <label for="btn-modal" class="lbl-modal">Acepta Terminos y Condiciones</label>
-                        <div class="container-button">
-                            <button type="submit"><a href="login.html">Ingresar</a></button>
+                        <label for="btn-modal" class="lbl-modal">Terminos y condiciones</label>
+
+                        <div class="boton">
+                            <Link to="/login">Ingresar</Link>
                         </div>
 
+                        <input type="checkbox" id="btn-modal" />
+                        <label for="btn-modal" class="lbl-modal">Abrir Modal</label>
                         <div class="modal">
-                            <div class="contenedor">
+                            <div class="contenedor-register">
                                 <header>Terminos y Condiciones</header>
                                 <label for="btn-modal">X</label>
                                 <div class="contenido">
+                                    <h3>
+                                        Agregar un titulo
+                                    </h3>
                                     <p>
-                                        Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las
-                                        leyes por las que nos regimos y
-                                        determinados aspectos que siempre hemos creido que son ciertos. Por ello, estos Términos
-                                        del Servicio ayudan a definir
-                                        la relación que tiene Google contigo cuando interactúas con nuestros servicios, Por
-                                        ejemplo, estos términos incluyen las
+                                        Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y
+                                        determinados aspectos que siempre hemos creido que son ciertos. Por ello, estos Términos del Servicio ayudan a definir
+                                        la relación que tiene Google contigo cuando interactúas con nuestros servicios, Por ejemplo, estos términos incluyen las
                                         siguientes secciones:
                                     </p>
                                     <p>
-                                        Qué puedes esperar de nosotros, donde se describe como proporcionamos y desarrollamos
-                                        nuestros servicios. Lo que
+                                        Qué puedes esperar de nosotros, donde se describe como proporcionamos y desarrollamos nuestros servicios. Lo que
                                         esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.
                                     </p>
 
@@ -108,9 +117,9 @@ function Registrar() {
                         </div>
                     </form>
                 </div>
-            </div>
+
         </body>
     );
 }
 
-export default Registrar;
+export default registrar;

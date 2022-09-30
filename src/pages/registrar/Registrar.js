@@ -1,11 +1,11 @@
 import React from 'react';
-import Tabla from '../../components/registrar/Registrar';
 import './Registrar.css';
+import Form from '../../components/registrar/Registrar';
 
 function Registrar() {
     return (
-        <div className="contenedor">
-            <Tabla />
+        <div>
+            <Form/>
         </div>
     );
 }

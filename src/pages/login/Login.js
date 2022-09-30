@@ -4,9 +4,7 @@ import "./Login.css";
 
 function Login() {
     return (
-        <div className="contenedor">
             <Formulario />
-        </div>
     );
 }
 

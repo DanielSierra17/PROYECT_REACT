@@ -5,7 +5,7 @@ import wave from "./wave.svg";
 
 function Login() {
     return (
-        <body class="background">
+        <body class="back-login">
             <div class="container-form">
                 <img src={wave} alt="" />
 
@@ -18,7 +18,7 @@ function Login() {
                 <span>Contraseña</span>
                 <input type="password" class="container-input" />
 
-                <button type="submit"><Link to="/dashboard">Ingresar</Link></button>
+                <button type="submit" class="boton-login"><Link to="/dashboard">Ingresar</Link></button>
 
                 <p>¿No tienes una cuenta? <Link to="/registrar" class="color-message">Regístrate aquí</Link></p>
             </div>
