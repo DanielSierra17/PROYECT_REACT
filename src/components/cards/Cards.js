@@ -3,11 +3,11 @@ import img1 from "./men1.jpg";
 import img2 from "./men2.jpg";
 import img3 from "./mujer.jpg";
 
-function Cards() {
+function Cards({opiniones}) {
     return (
         <div>
             <div class="cards-text">
-                <h1>Nuestros usuarios dicen...</h1>
+                <h1>{opiniones}</h1>
             </div>
 
             <div class="cards-container">

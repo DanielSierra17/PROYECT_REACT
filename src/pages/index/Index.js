@@ -16,7 +16,7 @@ function Inicio() {
             <Description />
             <Feature />
             <Maps />
-            <Cards />
+            <Cards opiniones='Opniones Clientes' />
             <Footer />
         </div>
     );
