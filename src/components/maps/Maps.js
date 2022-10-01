@@ -7,8 +7,8 @@ function Maps({ info }) {
             <h2 class="location-tittle">{info}</h2>
 
             <div class="location-zone">
-                <p>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</p>
                 <img class="cont-maps" src={mapa} alt="" />
+                <p>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</p>
                 <hr class="split-line"></hr>
                 <p>+57 601 4567899</p>
             </div>
