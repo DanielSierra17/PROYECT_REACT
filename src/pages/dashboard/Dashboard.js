@@ -1,11 +1,11 @@
 import React from 'react';
+import Tablero from '../../components/dashboard/Dashboard';
 import './Dashboard.css';
-import Dash from '../../components/dash/Dash';
 
 function Dashboard() {
     return (
-        <div>
-            <Dash />
+        <div className="contenedor">
+            <Tablero />
         </div>
     );
 }

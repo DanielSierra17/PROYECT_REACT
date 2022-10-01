@@ -1,0 +1,82 @@
+.cards-text {
+    font-family: 'Marcellus', serif;
+    display: flex;
+    color: var(--blanco);
+    justify-content: center;
+    font-size: 2.1em;
+    background-color: var(--negro2);
+    padding-bottom: 7%;
+    padding-top: 2%;
+}
+
+.cards-container {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: -4.5%;
+    margin-bottom: 5%;
+    left: 3%;
+    background-color: var(--degradado);
+    align-items: center;
+}
+
+.cards-profile {
+    width: 90%;
+    padding: 3%;
+    background-image: url(./Group\ 200.svg);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.container-name {
+    color: var(--blanco);
+    font-family: 'Marcellus', serif;
+}
+
+.cards-name img {
+    width: 22%;
+    color: var(--blanco);
+    margin-left: -75%;
+    border-radius: 50%;
+}
+
+.cards-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cards-description {
+    color: var(--blanco);
+}
+
+.icon {
+    padding: 1%;
+    font-size: 150%;
+}
+
+.icon-color {
+    color: var(--Magenta);
+    font-size: 150%;
+    padding: 1%;
+}
+
+.container-lines {
+    text-align: center;
+    align-self: flex-end;
+}
+
+.lines {
+    cursor: pointer;
+    height: 10px;
+    width: 55px;
+    margin: 0 2px;
+    background-color: var(--negro2);
+    display: inline-block;
+    transition: 0.6s ease;
+    border-radius: 1px;
+}

@@ -1,0 +1,11 @@
+#information-section {
+    display: flex;
+}
+
+.information-zone {
+    padding: 2em;
+}
+
+.information-image img {
+    display: none;
+}

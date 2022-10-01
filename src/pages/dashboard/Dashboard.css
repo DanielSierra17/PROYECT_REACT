@@ -1,35 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-    --azulclaro: #48D6ED;
-    --azuloscuro: #337AB7;
-    --azulnegro: #303342;
-    --negro: #333333;
-    --negro2: #000;
-    --gris: #B2B3B3;
-    --fondo: #FFFEFC;
-    --verdeazul: #157A8A;
-    --Magenta: #9C2759;
-    --blanco: #FFFFFF;
-    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Marcellus', serif;
-}
-
 .bodydash {
-    background-image: url(../../img/lin-leyu-cIRFLobYPkY-unsplash.jpg);
+    background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -37,16 +7,16 @@ h5 {
     height: 100%;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 520px) {
 
     .navdash {
         width: 30%;
         color: var(--blanco);
     }
 
-    .navdash .logo {
+    .navdash .log {
         background-color: #0B3860;
-        background-image: url(../../img/Group\ 200.svg);
+        background-image: url(./Group\ 200.svg);
         background-size: 100%;
         background-position: right bottom;
         background-repeat: no-repeat;
@@ -56,7 +26,7 @@ h5 {
         align-items: center;
     }
 
-    .logo img {
+    .log img {
         width: 70%;
         padding-top: 10%;
         padding-bottom: 20%;
@@ -71,25 +41,25 @@ h5 {
         height: 95.9%;
     }
 
-    .icons {
+    .icons-dash {
         display: flex;
         flex-direction: column;
     }
 
-    .navdash .container-lateral-bar .icons div {
+    .navdash .container-lateral-bar .icons-dash .fond {
         padding: 10px;
         font-size: 1.2em;
     }
 
-    .navdash .container-lateral-bar .icons div:hover {
+    .navdash .container-lateral-bar .icons-dash .fond:hover {
         background-color: var(--azuloscuro);
     }
 
-    .navdash .container-lateral-bar .icons .icon-active {
+    .navdash .container-lateral-bar .icons-dash .icon-active {
         background-color: var(--azuloscuro);
     }
 
-    .navdash .container-lateral-bar .icons div a {
+    .navdash .container-lateral-bar .icons-dash .fond a {
         display: none;
     }
 
@@ -106,7 +76,7 @@ h5 {
     .navdash .container-exit:hover {
         background-color: var(--azuloscuro);
     }
-    
+
     .container-dashboard {
         display: flex;
         background-color: rgba(255, 255, 255, 0.767);
@@ -125,9 +95,13 @@ h5 {
         display: flex;
         justify-content: center;
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 2px;
-        
+        color: var(--negro2);
+    }
+
+    .container-message h1 {
+        color: var(--negro2);
     }
 
     .container-information {
@@ -145,7 +119,7 @@ h5 {
         flex-direction: column;
     }
 
-    .container-image img {
+    .container-images img {
         width: 100%;
         height: 90%;
     }
@@ -155,7 +129,7 @@ h5 {
         color: var(--blanco);
         margin-top: 1rem;
         padding: 1rem;
-        background-color: var(--negro);
+        background-color: var(--negro2);
         font-size: 1em;
     }
 
@@ -172,29 +146,29 @@ h5 {
 
     .icons-three {
         display: none;
-        background-color: var(--negro);
+        background-color: var(--negro2);
     }
 
-    .container-form {
+    .container-dash {
         width: 80%;
         margin: 1rem;
     }
 
-    .container-form .container-columns {
+    .container-dash .container-columns {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
     }
 
-    .container-form .subcontainer-columns {
+    .container-dash .subcontainer-columns {
         display: flex;
         padding: 1.5em;
         width: 90%;
         flex-direction: column;
     }
 
-    .container-form .subcontainer-columns input {
+    .container-dash .subcontainer-columns input {
         width: 100%;
         padding: 0.5em;
         margin: 0.5em 0 0.5em 0;
@@ -220,7 +194,7 @@ h5 {
     .container-buttons button {
         width: 100%;
         color: var(--blanco);
-        background-color: var(--negro);
+        background-color: var(--negro2);
         padding: 2%;
         font-size: 1.2em;
         margin-top: 1em;
@@ -267,11 +241,12 @@ h5 {
     .navdash {
         width: 30%;
         color: var(--blanco);
+        flex-direction: column;
     }
 
-    .navdash .logo {
+    .navdash .log {
         background-color: #0B3860;
-        background-image: url(../../img/Group\ 200.svg);
+        background-image: url(./Group\ 200.svg);
         background-size: 100%;
         background-position: right bottom;
         background-repeat: no-repeat;
@@ -281,7 +256,7 @@ h5 {
         align-items: center;
     }
 
-    .logo img {
+    .log img {
         width: 70%;
         padding-top: 10%;
         padding-bottom: 20%;
@@ -296,29 +271,30 @@ h5 {
     .container-lateral-bar {
         background-color: var(--azulnegro);
         height: 73.9%;
+        width: 100%;
     }
 
-    .icons {
+    .icons-dash {
         display: flex;
         flex-direction: column;
     }
 
-    .navdash .container-lateral-bar .icons div {
+    .navdash .container-lateral-bar .icons-dash .fond {
         display: flex;
         flex-direction: row;
         padding: 1rem;
         font-size: 1.5rem;
     }
 
-    .navdash .container-lateral-bar .icons div:hover {
+    .navdash .container-lateral-bar .icons-dash .fond:hover {
         background-color: var(--azuloscuro);
     }
 
-    .navdash .container-lateral-bar .icons .icon-active {
+    .navdash .container-lateral-bar .icons-dash .icon-active {
         background-color: var(--azuloscuro);
     }
 
-    .navdash .container-lateral-bar .icons div a {
+    .navdash .container-lateral-bar .icons-dash .fond a {
         display: flex;
         text-decoration: none;
         color: var(--blanco);
@@ -327,6 +303,7 @@ h5 {
 
     .navdash .container-exit {
         display: flex;
+        width: 100%;
         flex-direction: row;
         padding: 1rem;
         font-size: 1.5rem;
@@ -338,10 +315,6 @@ h5 {
         text-decoration: none;
         color: var(--blanco);
         padding-left: 1rem;
-    }
-
-    .navdash .container-exit:hover {
-        background-color: var(--azuloscuro);
     }
 
     .container-dashboard {
@@ -361,7 +334,7 @@ h5 {
         display: flex;
         justify-content: center;
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         letter-spacing: 2px;
     }
 
@@ -380,7 +353,7 @@ h5 {
         justify-content: flex-start;
     }
 
-    .container-image img {
+    .container-images img {
         width: 100%;
         height: 90%;
     }
@@ -390,7 +363,7 @@ h5 {
         color: var(--blanco);
         margin-top: 1rem;
         padding: 1rem;
-        background-color: var(--negro);
+        background-color: var(--negro2);
         font-size: 1em;
     }
 
@@ -409,26 +382,26 @@ h5 {
         font-size: 2em;
     }
 
-    .container-form {
+    .container-dash {
         width: 80%;
         margin: 1rem;
     }
 
-    .container-form .container-columns {
+    .container-dash .container-columns {
         display: flex;
         width: 100%;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    .container-form .subcontainer-columns {
+    .container-dash .subcontainer-columns {
         display: flex;
         padding: 1.5em;
         width: 90%;
         flex-direction: column;
     }
 
-    .container-form .subcontainer-columns input {
+    .container-dash .subcontainer-columns input {
         width: 100%;
         padding: 0.5em;
         margin: 0.5em 0 0.5em 0;
@@ -454,7 +427,7 @@ h5 {
     .container-buttons button {
         width: 100%;
         color: var(--blanco);
-        background-color: var(--negro);
+        background-color: var(--negro2);
         padding: 2%;
         font-size: 1.2em;
         margin-top: 1em;

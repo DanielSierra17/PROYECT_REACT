@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1024px) {
+
+    .contenedor-error {
+        display: flex;
+        margin: 15%;
+        justify-content: center;
+    }
+
+    .subcontenedor-error {
+        text-align: center;
+        width: 70%;
+        height: 50%;
+    }
+
+    h1 {
+        font-size: 7rem;
+        color: var(--blanco);
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        color: var(--blanco);
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        color: var(--blanco);
+    }
+
+}

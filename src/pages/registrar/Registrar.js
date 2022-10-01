@@ -1,6 +1,6 @@
 import React from 'react';
 import './Registrar.css';
-import Form from '../../components/form/Form';
+import Form from '../../components/registrar/Registrar';
 
 function Registrar() {
     return (
