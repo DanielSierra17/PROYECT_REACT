@@ -12,10 +12,10 @@ function Inicio() {
     return (
         <div className="contenedor">
             <Navbar />
-            <Banner />
+            <Banner texto='Hotelia el mejor lugar para pasar tus vacaciones, disfruta de la hermosa ciudad de Bogotá D.C.' />
             <Description />
             <Feature />
-            <Maps />
+            <Maps info='Ubicacion Bogotá' />
             <Cards opiniones='Opniones Clientes' />
             <Footer />
         </div>

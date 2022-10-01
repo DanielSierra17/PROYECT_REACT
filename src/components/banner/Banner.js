@@ -1,10 +1,9 @@
 import "./Banner.css";
 
-function Banner(){
+function Banner({texto}){
     return(
         <section id="banner">
-            <h4>Lorem ipsum dolor sit ameliter,<br/>
-            consectetur adipiscing elit</h4>
+            <h4>{texto}</h4>
         </section>
     );
 }

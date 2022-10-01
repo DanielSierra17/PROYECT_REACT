@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
 
     .dash {
         background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
@@ -6,11 +6,12 @@
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
+        width: 30em;
     }
 
     .slider-register {
         display: flex;
-        width: 22em;
+        width: 23em;
         height: 100%;
         flex-direction: column;
         background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
@@ -36,7 +37,7 @@
         background-color: rgba(255, 255, 255, 0.767);
         margin: 1em;
         padding: 1em;
-        width: 80%;
+        width: 90%;
         font-size: 1.2em;
         border-radius: 5px;
     }
@@ -48,6 +49,10 @@
         padding: 0em;
         font-size: 1em;
         letter-spacing: 2px;
+    }
+
+    .registrate h1 {
+        color: var(--negro2);
     }
 
     form {
@@ -154,7 +159,7 @@
 
     .modal {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,10 +221,6 @@
         justify-content: center;
     }
 
-    .contenido h3 {
-        margin-bottom: 10px;
-    }
-
     .contenido p {
         padding: 1em;
         font-size: 13px;
@@ -230,7 +231,7 @@
         height: 10%;
         align-self: center;
         color: var(--blanco);
-        background-color: var(--negro);
+        background-color: var(--negro2);
         padding: 5px;
         font-size: 1em;
         margin-top: 1em;
@@ -255,7 +256,7 @@
     
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
     .dash {
         background-image: url(./lin-leyu-cIRFLobYPkY-unsplash.jpg);
@@ -264,6 +265,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+        width: 85em;
     }
 
     .slider-register {
@@ -320,6 +322,10 @@
         padding: 1rem;
         font-size: 2.5rem;
         letter-spacing: 2px;
+    }
+
+    .registrate h1 {
+        color: var(--negro2);
     }
 
     form {
@@ -397,10 +403,6 @@
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     }
 
-    .foto input {
-        display: none;
-    }
-
     .boton {
         display: flex;
         flex-direction: column;
@@ -419,12 +421,11 @@
         border: 0;
         text-decoration: none;
         text-align: center;
-
     }
 
     .modal {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -446,7 +447,7 @@
     }
 
     .contenedor-register {
-        width: 25%;
+        width: 90%;
         margin: auto;
         background: #fff;
         box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
@@ -464,7 +465,7 @@
         background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
         color: #fff;
         text-align: center;
-        font-size: 2em;
+        font-size: 1em;
         font-family: 'Playfair Display', serif;
 
     }
@@ -486,13 +487,9 @@
         justify-content: center;
     }
 
-    .contenido h3 {
-        margin-bottom: 10px;
-    }
-
     .contenido p {
         padding: 1em;
-        font-size: 18px;
+        font-size: 13px;
     }
 
     .contenido button {
@@ -500,7 +497,7 @@
         height: 10%;
         align-self: center;
         color: var(--blanco);
-        background-color: var(--negro);
+        background-color: var(--negro2);
         padding: 5px;
         font-size: 1em;
         margin-top: 1em;

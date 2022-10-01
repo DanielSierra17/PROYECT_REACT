@@ -1,4 +1,4 @@
-#feature{
+/* #feature{
     background-image: url("bg-features.png");
     color: var(--blanco);
     padding: 1.5rem 0;
@@ -18,4 +18,49 @@
     justify-content: space-around;
     margin-top: 1rem;
     
+} */
+
+#features {
+    background: url(./bg-features.png);
+    color: var(--blanco);
+    padding-top: 3rem;
+}
+
+.features-title {
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.features-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue {
+    background-color: #00325eae;
+}
+
+.feature-black {
+    background-color: rgba(0, 0, 0, 0.59);
 }
