@@ -17,6 +17,7 @@
 }
 
 .subcontenedor-error {
+    justify-content: center;
     text-align: center;
     width: 70%;
     height: 50%;
