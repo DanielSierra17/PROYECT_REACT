@@ -13,13 +13,6 @@
     text-align: center;
 }
 
-.cont-maps {
-    width: 100%;
-    height: 20em;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .location-zone {
     display: flex;
     font-family: 'Marcellus', serif;

@@ -1,19 +1,31 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./Hotelia horizontal blanco.svg";
+import { useState } from "react";
 
 function Navbar() {
+    const [abrirMenu, setAbrirMenu] = useState(false)
+
+    function Menu() {
+        if (abrirMenu === false) {
+            setAbrirMenu(true)
+        }
+        else if (abrirMenu === true) {
+            setAbrirMenu(false)
+        }
+    }
+
     return (
         <nav>
             <div class="logo">
                 <img src={logo} alt="Hotelia horizontal blanco"></img>
-                <i class="fa-solid fa-bars hamburguer"></i>
+                <i class="fa-solid fa-bars hamburguer" onClick={() => {Menu()}}></i>
             </div>
 
-            <div class="menu outside">
-                <a href="#" class="item">Inicio</a>
-                <a href="#" class="item">Ubícanos</a>
-                <a href="#" class="item">Opiniones</a>
+            <div className={abrirMenu ? 'menu abrir' : abrirMenu === false ? 'menu outside' : 'Menu'}>
+                <Link href="#" class="item">Inicio</Link>
+                <Link href="#" class="item">Ubícanos</Link>
+                <Link href="#" class="item">Opiniones</Link>
                 <hr class="menu-hr" noshade="" />
                 <Link to="/login" class="item"><button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar
                     Sesión</button></Link>
