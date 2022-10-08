@@ -42,7 +42,6 @@ function Dashboard() {
                         </div>
                         <Link to="#">Cambiar contraseña</Link>
                     </div>
-
                     <form class="container-dash">
                         <div class="container-columns">
                             <div class="subcontainer-columns">
@@ -105,20 +104,18 @@ function Dashboard() {
                                     <input type="number" value="3135207460" />
                                 </div>
 
-
                                 <div class="subcontainer-password">
                                     <div>
                                         <label>Confirmar contraseña</label>
                                         <input type="password" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </form>
                 </div>
             </section>
-        </div>
+        </div >
     );
 }
 
