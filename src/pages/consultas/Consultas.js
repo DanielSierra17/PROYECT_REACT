@@ -24,7 +24,7 @@ function Consultas() {
 
     return (
         <body className='const-cont'>
-        <div className='container-const'>
+        <div className='container'>
             {
                 list.map((list, index) => (
                     <Table table hover variant='light'>
