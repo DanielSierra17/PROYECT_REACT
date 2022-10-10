@@ -1,9 +1,35 @@
 import { Link } from 'react-router-dom';
 import señora from '../../img/men1.jpg';
 import logodash from '../../img/Hotelia horizontal blanco.svg';
+import axios from 'axios';
+import { Card } from "react-bootstrap";
 
-function Dashboard() {
+function Dashboard({ usuario, setUplist, upList, handleClose, handleOpen, setDataModal }) {
+
+    const url = "https://hoteliakuepa.herokuapp.com/users";
+
+    const handleEdit = () => {
+        // handleOpen();
+        setDataModal(usuario);
+    }
+
     return (
+
+        <div className="col-4 mb-3">
+            <Card>
+                <Card.Img variant="top" src={usuario.foto} className="img-card" />
+                <Card.Body>
+                    <Card.Title className="text-center">{usuario.nombre} {usuario.apellido}</Card.Title>
+                    <Card.Text>
+                        <strong>Tipo Documento: </strong>{usuario.tipodoc}<br />
+                        <strong>No. Documento: </strong>{usuario.numdoc}<br />
+                        <strong>Perfil: </strong>{usuario.perfil}
+                    </Card.Text>
+                    <button className="btn btn-warning me-2" onClick={handleEdit}>Editar</button>
+            </Card>
+        </Card.Body>
+        </div >
+
         <div class="bodydash">
             <nav class="navdash">
                 <div class="log">
@@ -19,6 +45,7 @@ function Dashboard() {
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Reservas</Link></div>
                         <div class="fond"><i class="fa-solid fa-bed"></i><Link to="#">Habitaciones</Link></div>
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Habitaciones</Link></div>
+                        <div class="fond"><i class="fa-sharp fa-solid fa-magnifying-glass"></i><Link to="/consultar">Consultar</Link></div>
                     </div>
                 </div>
                 <div class="container-exit">
@@ -46,38 +73,42 @@ function Dashboard() {
                         <div class="container-columns">
                             <div class="subcontainer-columns">
                                 <div>
-                                    <label>Tipo de documento</label>
-                                    <input type="text" value="Cedula de ciudadania" />
+                                    <label for="tipodoc">Tipo de documento</label>
+                                    <select name="select">
+                                        <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+                                        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                                        <option value="Cédula de extranjería">Cédula de extranjería</option>
+                                    </select>
                                 </div>
                                 <div>
-                                    <label>Fecha de nacimiento</label>
-                                    <input type="date" value="1976-08-10" />
+                                    <label for="fnacimiento">Fecha de nacimiento</label>
+                                    <input id="fnacimiento" name="fnacimiento" type="date" value={usuario.fnacimiento} />
                                 </div>
                                 <div>
-                                    <label>Nombre</label>
-                                    <input type="text" value="Angie Camila" />
+                                    <label for="nombre">Nombre</label>
+                                    <input id="nombre" name="nombre" type="text" value={usuario.nombre} />
                                 </div>
                                 <div>
-                                    <label>Género</label>
-                                    <div id="container-radio">
-                                        <input type="radio" /><label>Mujer</label>
-                                        <input type="radio" /><label>Hombre</label>
-                                        <input type="radio" /><label>Otro</label>
-                                    </div>
+                                    <label for="genero">Género</label>
+                                    <select name="select">
+                                        <option value="Mujer">Mujer</option>
+                                        <option value="Hombre">Hombre</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
                                 </div>
                                 <div>
-                                    <label>Email</label>
-                                    <input type="email" value="Angievargas2@gmail.com" />
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="email" value={usuario.email} />
                                 </div>
 
                                 <div class="container-buttons">
-                                    <button type="submit">Actualizar</button>
+                                    <button type="submit" onClick={handleEdit}>Actualizar</button>
                                 </div>
 
                                 <div class="container-password">
                                     <div>
-                                        <label>contraseña</label>
-                                        <input type="password" />
+                                        <label for="password">contraseña</label>
+                                        <input type="password" name="password" id="password" value={usuario.password} />
                                     </div>
                                 </div>
 
@@ -88,20 +119,20 @@ function Dashboard() {
 
                             <div class="subcontainer-columns">
                                 <div>
-                                    <label>Número de documento</label>
-                                    <input type="number" value="1025417456" />
+                                    <label for="_id">Número de documento</label>
+                                    <input type="number" name="_id" id="_id" value={usuario._id} />
                                 </div>
                                 <div>
-                                    <label>Apellido</label>
-                                    <input type="text" value="Vargas Pinzon" />
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" name="apellido" id="apellido" value={usuario.apellido} />
                                 </div>
                                 <div>
-                                    <label>País de origen</label>
-                                    <input type="text" value="Colombia" />
+                                    <label for="paisorigen">País de origen</label>
+                                    <input type="text" name="paisorigen" id="paisorigen" value={usuario.paisorigen} />
                                 </div>
                                 <div>
-                                    <label>Telefono</label>
-                                    <input type="number" value="3135207460" />
+                                    <label for="telefono">Telefono</label>
+                                    <input type="number" name="telefono" id="telefono" value={usuario.telefono} />
                                 </div>
 
                                 <div class="subcontainer-password">

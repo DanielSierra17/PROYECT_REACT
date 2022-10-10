@@ -11,7 +11,7 @@ function Registrar() {
 
     const [data, setData] = useState({
         _id: "", tipodoc: "", nombre: "", apellido: "", fnacimiento: "",
-        genero: "", email: "", telefono: "", paisorigen: "", password: "", tipouser: "huesped", img: ""
+        genero: "", email: "", telefono: "", paisorigen: "", password: "", tipouser: "Huesped", img: ""
     });
 
     const handleChange = ({ target }) => {

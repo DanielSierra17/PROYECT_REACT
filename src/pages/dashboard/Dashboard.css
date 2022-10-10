@@ -168,7 +168,7 @@
         flex-direction: column;
     }
 
-    .container-dash .subcontainer-columns input {
+    .container-dash .subcontainer-columns input, select {
         width: 100%;
         padding: 0.5em;
         margin: 0.5em 0 0.5em 0;
