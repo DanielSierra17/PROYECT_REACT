@@ -1,35 +1,9 @@
 import { Link } from 'react-router-dom';
 import señora from '../../img/men1.jpg';
 import logodash from '../../img/Hotelia horizontal blanco.svg';
-import axios from 'axios';
-import { Card } from "react-bootstrap";
 
-function Dashboard({ usuario, setUplist, upList, handleClose, handleOpen, setDataModal }) {
-
-    const url = "https://hoteliakuepa.herokuapp.com/users";
-
-    const handleEdit = () => {
-        // handleOpen();
-        setDataModal(usuario);
-    }
-
+function Dashboard() {
     return (
-
-        <div className="col-4 mb-3">
-            <Card>
-                <Card.Img variant="top" src={usuario.foto} className="img-card" />
-                <Card.Body>
-                    <Card.Title className="text-center">{usuario.nombre} {usuario.apellido}</Card.Title>
-                    <Card.Text>
-                        <strong>Tipo Documento: </strong>{usuario.tipodoc}<br />
-                        <strong>No. Documento: </strong>{usuario.numdoc}<br />
-                        <strong>Perfil: </strong>{usuario.perfil}
-                    </Card.Text>
-                    <button className="btn btn-warning me-2" onClick={handleEdit}>Editar</button>
-            </Card>
-        </Card.Body>
-        </div >
-
         <div class="bodydash">
             <nav class="navdash">
                 <div class="log">
@@ -45,7 +19,7 @@ function Dashboard({ usuario, setUplist, upList, handleClose, handleOpen, setDat
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Reservas</Link></div>
                         <div class="fond"><i class="fa-solid fa-bed"></i><Link to="#">Habitaciones</Link></div>
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Habitaciones</Link></div>
-                        <div class="fond"><i class="fa-sharp fa-solid fa-magnifying-glass"></i><Link to="/consultar">Consultar</Link></div>
+                        <div class="fond"><i class="fa-solid fa-magnifying-glass"></i><Link to="/consultar">Consultar</Link></div>
                     </div>
                 </div>
                 <div class="container-exit">
@@ -73,42 +47,38 @@ function Dashboard({ usuario, setUplist, upList, handleClose, handleOpen, setDat
                         <div class="container-columns">
                             <div class="subcontainer-columns">
                                 <div>
-                                    <label for="tipodoc">Tipo de documento</label>
-                                    <select name="select">
-                                        <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
-                                        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
-                                        <option value="Cédula de extranjería">Cédula de extranjería</option>
-                                    </select>
+                                    <label>Tipo de documento</label>
+                                    <input type="text" value="Cedula de ciudadania" />
                                 </div>
                                 <div>
-                                    <label for="fnacimiento">Fecha de nacimiento</label>
-                                    <input id="fnacimiento" name="fnacimiento" type="date" value={usuario.fnacimiento} />
+                                    <label>Fecha de nacimiento</label>
+                                    <input type="date" value="1976-08-10" />
                                 </div>
                                 <div>
-                                    <label for="nombre">Nombre</label>
-                                    <input id="nombre" name="nombre" type="text" value={usuario.nombre} />
+                                    <label>Nombre</label>
+                                    <input type="text" value="Angie Camila" />
                                 </div>
                                 <div>
-                                    <label for="genero">Género</label>
-                                    <select name="select">
-                                        <option value="Mujer">Mujer</option>
-                                        <option value="Hombre">Hombre</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
+                                    <label>Género</label>
+                                    <div id="container-radio">
+                                        <input type="radio" /><label>Mujer</label>
+                                        <input type="radio" /><label>Hombre</label>
+                                        <input type="radio" /><label>Otro</label>
+                                    </div>
                                 </div>
                                 <div>
-                                    <label for="email">Email</label>
-                                    <input id="email" name="email" type="email" value={usuario.email} />
+                                    <label>Email</label>
+                                    <input type="email" value="Angievargas2@gmail.com" />
                                 </div>
 
                                 <div class="container-buttons">
-                                    <button type="submit" onClick={handleEdit}>Actualizar</button>
+                                    <button type="submit">Actualizar</button>
                                 </div>
 
                                 <div class="container-password">
                                     <div>
-                                        <label for="password">contraseña</label>
-                                        <input type="password" name="password" id="password" value={usuario.password} />
+                                        <label>contraseña</label>
+                                        <input type="password" />
                                     </div>
                                 </div>
 
@@ -119,20 +89,20 @@ function Dashboard({ usuario, setUplist, upList, handleClose, handleOpen, setDat
 
                             <div class="subcontainer-columns">
                                 <div>
-                                    <label for="_id">Número de documento</label>
-                                    <input type="number" name="_id" id="_id" value={usuario._id} />
+                                    <label>Número de documento</label>
+                                    <input type="number" value="1025417456" />
                                 </div>
                                 <div>
-                                    <label for="apellido">Apellido</label>
-                                    <input type="text" name="apellido" id="apellido" value={usuario.apellido} />
+                                    <label>Apellido</label>
+                                    <input type="text" value="Vargas Pinzon" />
                                 </div>
                                 <div>
-                                    <label for="paisorigen">País de origen</label>
-                                    <input type="text" name="paisorigen" id="paisorigen" value={usuario.paisorigen} />
+                                    <label>País de origen</label>
+                                    <input type="text" value="Colombia" />
                                 </div>
                                 <div>
-                                    <label for="telefono">Telefono</label>
-                                    <input type="number" name="telefono" id="telefono" value={usuario.telefono} />
+                                    <label>Telefono</label>
+                                    <input type="number" value="3135207460" />
                                 </div>
 
                                 <div class="subcontainer-password">
