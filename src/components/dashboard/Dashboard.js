@@ -19,6 +19,7 @@ function Dashboard() {
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Reservas</Link></div>
                         <div class="fond"><i class="fa-solid fa-bed"></i><Link to="#">Habitaciones</Link></div>
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Habitaciones</Link></div>
+                        <div class="fond"><i class="fa-solid fa-magnifying-glass"></i><Link to="/consultar">Consultar</Link></div>
                     </div>
                 </div>
                 <div class="container-exit">
@@ -42,7 +43,6 @@ function Dashboard() {
                         </div>
                         <Link to="#">Cambiar contraseña</Link>
                     </div>
-
                     <form class="container-dash">
                         <div class="container-columns">
                             <div class="subcontainer-columns">
@@ -105,20 +105,18 @@ function Dashboard() {
                                     <input type="number" value="3135207460" />
                                 </div>
 
-
                                 <div class="subcontainer-password">
                                     <div>
                                         <label>Confirmar contraseña</label>
                                         <input type="password" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </form>
                 </div>
             </section>
-        </div>
+        </div >
     );
 }
 

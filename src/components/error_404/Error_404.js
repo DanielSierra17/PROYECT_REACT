@@ -7,8 +7,9 @@ function Errores() {
             <div class="contenedor-error">
                 <div class="subcontenedor-error">
                     <h1>ERROR 404</h1>
-                    <h3>EXTRAVIADO</h3>
-                    <h5>el recurso solicitado no se pudo encontrar en este servidor</h5>
+                    <h3>PÁGINA NO ENCONTRADA</h3>
+                    <h5>EXTRAVIADO</h5>
+                    <h5>LO SEMTIMOS, NO HEMOS PODIDO ENCONTRAR LA PÁGINA SOLICITADA</h5>
                 </div>
             </div>
 

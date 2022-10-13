@@ -11,7 +11,7 @@ function Navbar() {
             setAbrirMenu(true)
         }
         else if (abrirMenu === true) {
-            setAbrirMenu(abrirMenu)
+            setAbrirMenu(false)
         }
     }
 
