@@ -8,6 +8,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Registrar from './pages/registrar/Registrar';
 import Errores from './pages/error_404/Error_404';
 import Consultar from './pages/consultas/Consultas';
+import Actualizar from './pages/actualizar/Actualizar_Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/registrar' element={<Registrar />} />
       <Route path='/errores' element={<Errores />} />
-      <Route path='/consultar' element={<Consultar/ >} />
+      <Route path='/consultar' element={<Consultar />} />
+      <Route path='/actualizar' element={<Actualizar />} />
     </Routes>
   </BrowserRouter>
 );

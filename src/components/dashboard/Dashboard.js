@@ -20,6 +20,7 @@ function Dashboard() {
                         <div class="fond"><i class="fa-solid fa-bed"></i><Link to="#">Habitaciones</Link></div>
                         <div class="fond"><i class="fa-solid fa-bell-concierge"></i><Link to="#">Habitaciones</Link></div>
                         <div class="fond"><i class="fa-solid fa-magnifying-glass"></i><Link to="/consultar">Consultar</Link></div>
+                        <div class="fond"><i class="fa-solid fa-user-pen"></i><Link to="/actualizar">Actualizar</Link></div>
                     </div>
                 </div>
                 <div class="container-exit">
